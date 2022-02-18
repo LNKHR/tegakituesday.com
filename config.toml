@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Tegaki Tuesday'
 theme = 'tegakituesday.com'
 enableEmoji = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
 
 [params]
 	AuthorName = "Elnu"
