@@ -1,8 +1,8 @@
-{{ $scratch := newScratch }}
-{{ $scratch.Set "current" 0 }}
-{{ range.Site.RegularPages }}
-	{{ if gt (int .File.TranslationBaseName) ($scratch.Get "current") }}
-		{{ $scratch.Set "current" (int .File.TranslationBaseName) }}
-	{{ end }}
-{{ end }}
-{{ $scratch.Get "current" }}
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "current" 0 -}}
+{{- range.Site.RegularPages -}}
+	{{- if gt (int .File.TranslationBaseName) ($scratch.Get "current") -}}
+		{{- $scratch.Set "current" (int .File.TranslationBaseName) -}}
+	{{- end -}}
+{{- end -}}
+{{- $scratch.Get "current" -}}
