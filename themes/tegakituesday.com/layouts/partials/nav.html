@@ -1,0 +1,17 @@
+<nav>
+	{{ $current := int (replaceRE `[^0-9]` "" .File) }}
+	{{ $scratch := newScratch }}
+	{{ $scratch.Set "isLatest" true }}
+	{{ range.Site.RegularPages }}
+		{{ if gt (int .File.TranslationBaseName) $current }}
+			{{ $scratch.Set "isLatest" false }}
+		{{ end }}
+	{{ end }}
+	{{ if ne $current 1 }}
+		<a class="nav-button" href="../{{ sub $current 1 }}"><i class="fas fa-chevron-left"></i>&nbsp;#{{ sub $current 1 }}</a>
+	{{ end }}
+	<span class="title"><a href="/"><i class="fa-solid fa-house"></i> Homepage</a></span>
+	{{ if not ($scratch.Get "isLatest") }}
+		<a class="nav-button" href="../{{ add $current 1 }}">#{{ add $current 1 }}&nbsp;<i class="fas fa-chevron-right"></i></a>
+	{{ end }}
+</nav>

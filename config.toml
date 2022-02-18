@@ -10,8 +10,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	FontAwesomeKit = "c3c3b565dc"
 
 [permalinks]
-	pages = "/:title"
-	challenges = "/:title"
+	challenges = "/:filename"
 
 [markup]
 	[markup.goldmark]

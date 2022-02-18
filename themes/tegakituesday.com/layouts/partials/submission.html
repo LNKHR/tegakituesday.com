@@ -1,0 +1,11 @@
+<div>
+	<figure>
+		{{ if .image }}
+			{{ $thumbnail := .image.Resize "500x" }}
+			<a href="{{ .image.RelPermalink }}" target="_blank"><img src="{{ $thumbnail.RelPermalink }}" alt="{{ .submission.username }}'s submission"></a>
+			<figcaption><a href="https://discord.com/users/{{ .submission.id }}"><i class="fab fa-discord"></i> {{ .submission.username }}</a></figcaption>
+		{{ else }}
+			<figcaption>Image not found!</figcaption>
+		{{ end }}
+	</figure>
+</div>

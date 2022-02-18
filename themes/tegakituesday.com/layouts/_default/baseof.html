@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{ block "head" . }}
+    	{{ partial "head.html" . }}
+	{{ end }}
+    <body>
+		<img id="mascot" src="/mascot.svg">
+		<div id="content">
+			<div>
+				{{ block "primary" . }}
+					<div class="content">
+						{{ block "main" . }}{{ end }}
+					</div>
+				{{ end }}
+				{{ block "mainFooter" . }}
+					{{ partial "footer.html" (partial "footers/main.html" .) }}
+				{{ end }}
+			</div>
+			<div>
+				<div class="content">
+					{{ block "secondary" . }}
+						{{ .Scratch.Get "secondary" }}
+					{{ end }}
+				</div>
+				{{ block "secondaryFooter" . }}
+					{{ partial "footer.html" (partial "footers/main.html" .) }}
+				{{ end }}
+			</div>
+		</div>
+    </body>
+</html>

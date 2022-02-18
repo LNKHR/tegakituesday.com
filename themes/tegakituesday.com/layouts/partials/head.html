@@ -1,0 +1,30 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<title>{{ if .Scratch.Get "title" }}{{ .Scratch.Get "title" }}{{ else }}{{ if not .IsHome }}{{ if eq .Kind "term" }}#{{ end }}{{ .Title }} | {{ end }} {{ .Site.Title }}{{ end }}</title>
+	<link rel="stylesheet" href="/css/style.css?{{ now.Unix }}" type="text/css" media="all" />
+	{{ with .OutputFormats.Get "rss" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
+	<script>
+		window.onload = () => {
+			const secondary = document.querySelector("#content > div:last-child");
+			const mascot = document.getElementById("mascot");
+			const scrollHandler = (event) => {
+				const element = event.target;
+				if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+					mascot.classList.add("hidden");
+				} else {
+					mascot.classList.remove("hidden");
+				}
+			}
+			secondary.addEventListener("scroll", scrollHandler);
+			secondary.addEventListener("touchmove", scrollHandler);
+		};
+	</script>
+	<script src="https://kit.fontawesome.com/{{ .Site.Params.FontAwesomeKit }}.js" crossorigin="anonymous"></script>
+</head>

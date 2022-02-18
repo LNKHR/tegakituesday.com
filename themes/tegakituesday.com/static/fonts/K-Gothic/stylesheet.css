@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'K Gothic';
+    src: url('K-Gothic.eot');
+    src: url('K-Gothic.eot?#iefix') format('embedded-opentype'),
+        url('K-Gothic.woff2') format('woff2'),
+        url('K-Gothic.woff') format('woff'),
+        url('K-Gothic.ttf') format('truetype'),
+        url('K-Gothic.svg#K-Gothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
