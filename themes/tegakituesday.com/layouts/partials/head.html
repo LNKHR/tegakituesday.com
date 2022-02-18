@@ -11,7 +11,7 @@
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 	<script>
-		window.onload = () => {
+window.onload = () => {
 const secondary = document.querySelector("#content > div:last-child");
 const mascot = document.getElementById("mascot");
 const scrollHandler = (event) => {
