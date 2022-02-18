@@ -8,7 +8,7 @@
 
 <p class="action-button">
 	<a href="/{{< current >}}">
-		<span>Latest challenge <i class="fa-solid fa-circle-arrow-right"></i></span>
+		<span>Latest challenge #{{< current >}} <i class="fa-solid fa-circle-arrow-right"></i></span>
 		<img src="/mascot-avatar.png">
 	</a>
 </p>
