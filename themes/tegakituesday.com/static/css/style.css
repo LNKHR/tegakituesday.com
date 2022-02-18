@@ -203,6 +203,7 @@ figure a {
 figure {
 	background: #282828;
 	padding: var(--gap);
+	padding-bottom: 0;
 	margin: 0;
 	margin-bottom: var(--gap);
 	overflow: hidden;
@@ -210,9 +211,9 @@ figure {
 }
 
 figcaption {
-	margin-top: 0.25em;
 	text-align: center;
 	font-size: 0.75em;
+	line-height: 2em;
 }
 
 figcaption span {
