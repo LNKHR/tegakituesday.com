@@ -12,33 +12,33 @@
 	{{ end -}}
 	<script>
 		window.onload = () => {
-			const secondary = document.querySelector("#content > div:last-child");
-			const mascot = document.getElementById("mascot");
-			const scrollHandler = (event) => {
-				const element = event.target;
-				if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-					mascot.classList.add("hidden");
-				} else {
-					mascot.classList.remove("hidden");
-				}
-			}
-			secondary.addEventListener("scroll", scrollHandler);
-			secondary.addEventListener("touchmove", scrollHandler);
+const secondary = document.querySelector("#content > div:last-child");
+const mascot = document.getElementById("mascot");
+const scrollHandler = (event) => {
+	const element = event.target;
+	if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+		mascot.classList.add("hidden");
+	} else {
+		mascot.classList.remove("hidden");
+	}
+}
+secondary.addEventListener("scroll", scrollHandler);
+secondary.addEventListener("touchmove", scrollHandler);
 		};
 	</script>
 	<!-- Matomo -->
 	<script>
-		var _paq = window._paq = window._paq || [];
-		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function() {
-		var u="https://{{ .Site.Params.MatomoURL }}/";
-		_paq.push(['setTrackerUrl', u+'matomo.php']);
-		_paq.push(['setSiteId', '{{ .Site.Params.SiteId }}']);
-		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-		})();
+var _paq = window._paq = window._paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+var u="https://{{ .Site.Params.MatomoURL }}/";
+_paq.push(['setTrackerUrl', u+'matomo.php']);
+_paq.push(['setSiteId', '{{ .Site.Params.SiteId }}']);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();
 	</script>
 	<!-- End Matomo Code -->
 	<script src="https://kit.fontawesome.com/{{ .Site.Params.FontAwesomeKit }}.js" crossorigin="anonymous"></script>
