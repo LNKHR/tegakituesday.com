@@ -206,6 +206,7 @@ figure {
 	margin: 0;
 	margin-bottom: var(--gap);
 	overflow: hidden;
+	display: inline-block;
 }
 
 figcaption {
