@@ -8,6 +8,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
 	AuthorName = "Elnu"
 	FontAwesomeKit = "c3c3b565dc"
+	MatomoURL = "matomo.elnu.com"
+	MatomoSiteId = "4"
 
 [permalinks]
 	challenges = "/:filename"
