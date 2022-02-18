@@ -1,0 +1,1 @@
+{{ if ne (dateFormat "2006" now | int) .Site.Params.CopyrightStart }}{{ .Site.Params.CopyrightStart }}&ndash;{{ end }}{{ dateFormat "2006" now }}

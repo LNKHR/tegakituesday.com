@@ -1,2 +1,2 @@
-Copyright &copy; {{ dateFormat "2006" now }} <b>{{ .Site.Title }}</b>. All rights reserved.<br>
+Copyright &copy; {{ partial "copyright-years.html" . }} <b>{{ .Site.Title }}</b>. All rights reserved.<br>
 Site last regenerated with <a href="https://gohugo.io/" target="_blank">Hugo</a> at {{ partial "time.html" (dict "Date" now) }}.

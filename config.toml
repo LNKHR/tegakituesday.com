@@ -10,6 +10,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
 	FontAwesomeKit = "c3c3b565dc"
 	MatomoURL = "matomo.elnu.com"
 	MatomoSiteId = "4"
+	CopyrightStart = 2021
 
 [permalinks]
 	challenges = "/:filename"
