@@ -290,6 +290,9 @@ a {
 
 a:hover {
 	border-bottom: 2px solid;
+}
+
+a:hover img {
 	filter: brightness(1.25);
 }
 
