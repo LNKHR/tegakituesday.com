@@ -70,6 +70,7 @@
 html, body {
 	overflow-x: hidden;
 }
+
 body {
 	position: relative;
 	font-family: 'Nunito', 'K Gothic', sans-serif;
