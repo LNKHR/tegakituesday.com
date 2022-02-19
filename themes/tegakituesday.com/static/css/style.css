@@ -244,6 +244,10 @@ figure a {
 }
 
 @media (min-width: 768px) {
+	#mascot {
+		display: block !important;
+	}
+
 	#submissions {
 		column-count: 2;
 	}
@@ -406,6 +410,7 @@ p, ul, ol {
 }
 
 #mascot {
+	display: none;
 	position: absolute;
 	right: 1em;
 	bottom: 0;
