@@ -52,7 +52,7 @@
 								{{- if and (not .dictionary) (not .pos) -}}
 									{{- $.Scratch.Get "html" | safeHTML -}}
 								{{- else -}}
-									<a href="https:/jisho.org/word/{{- $.Scratch.Get "dictionary" -}}" class="{{- .pos -}}" title="{{- .pos -}}" target="_blank">{{- $.Scratch.Get "html" | safeHTML -}}</a>
+									<a href="https://jisho.org/word/{{- $.Scratch.Get "dictionary" -}}" class="{{- .pos -}}" title="{{- .pos -}}" target="_blank">{{- $.Scratch.Get "html" | safeHTML -}}</a>
 								{{- end -}}
 							{{- end -}}</p>
 						{{- end -}}
