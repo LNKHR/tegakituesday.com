@@ -45,9 +45,9 @@
 											{{- $.Scratch.Add "html" . -}}
 										{{- end -}}
 									{{- end -}}
-									{{- if .dictionary -}}
-										{{- $.Scratch.Set "dictionary" .dictionary -}}
-									{{- end -}}
+								{{- end -}}
+								{{- if .dictionary -}}
+									{{- $.Scratch.Set "dictionary" .dictionary -}}
 								{{- end -}}
 								{{- if and (not .dictionary) (not .pos) -}}
 									{{- $.Scratch.Get "html" | safeHTML -}}
