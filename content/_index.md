@@ -54,11 +54,6 @@ This site is operated by Elnu, who you can contact on Discord at [Elnu#2917](htt
 
 # Getting started
 
-Handwriting tips & resources coming soon!
-
-<!--
-# Getting started
-
 *This section is courtesy of Delta ([Δ三八#4656](https://discord.com/users/200401434137722881)).*
 
 There are three important things when writing Japanese, whether it be kana or kanji:
@@ -125,5 +120,5 @@ This image should explain the difference:
 As for where to start, start with learning how to write hiragana properly:
 
 {{< youtube wD3FJgij79c >}}
--->
+
 {{< /secondary >}}
