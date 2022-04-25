@@ -38,6 +38,7 @@ For more information on [字]{じ}ちゃん commands, see the [command list](#co
 - `-h leaderboard` ~~View the community leaderboard and challenge stats!~~ **(Coming back soon)**
 - `-h images` List the images in your current submission, if available
 - `-h imageDelete <image number>` Delete images from your current submission using image numbers from `h images`.
+- `-h suggest <suggestion>` Make a suggestion for future challenge prompts!
 - `-h i <text>` Get category information and links to Jisho for character(s), along with with stroke a order diagram for single characters.
 - `-h so <text>` Get stroke order diagrams for character(s), maximum 4
 - `-h jinmeiyo` Random [Jinmeiyō](https://en.wikipedia.org/wiki/Jinmeiyō_kanji) kanji
