@@ -13,6 +13,10 @@
 	</a>
 </p>
 
+<h2 style="text-align: center; margin: 0">:trophy: Leaderboard</h2>
+
+{{< leaderboard >}}
+
 Welcome to the Tegaki Tuesday website!
 
 Tegaki Tuesday is a weekly Japanese/English handwriting challenge that happens every, you guessed it, Tuesday. For each challenge, a short passage along with its translation is selected from a haiku, the lyrics of a song, or a passage from a book, and posted to this site.
