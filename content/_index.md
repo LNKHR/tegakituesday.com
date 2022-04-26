@@ -39,7 +39,6 @@ For more information on [字]{じ}ちゃん commands, see the [command list](#co
 
 - `-h submit` Submit to the latest handwriting challenge.
 - `-h challenge` View the latest handwriting challenge info.
-- `-h leaderboard` ~~View the community leaderboard and challenge stats!~~ **(Coming back soon)**
 - `-h images` List the images in your current submission, if available
 - `-h imageDelete <image number>` Delete images from your current submission using image numbers from `h images`.
 - `-h suggest <suggestion>` Make a suggestion for future challenge prompts!
