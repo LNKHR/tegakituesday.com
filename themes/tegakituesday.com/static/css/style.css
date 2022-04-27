@@ -298,7 +298,7 @@ a {
 	color: var(--gb-dm-light-purple);
 }
 
-a:hover {
+a:hover, a:hover .underline {
 	border-bottom: 2px solid;
 }
 
@@ -479,22 +479,36 @@ h1:first-child {
 	margin: auto;
 }
 
-#leaderboard td, #leaderboard th {
+#leaderboard td {
 	padding: 0.125em;
-}
-
-#leaderboard th {
-	text-align: left;
 }
 
 #leaderboard a {
 	color: var(--gb-dm-fg1);
 }
 
-#leaderboard img {
-	height: 1.5em;
+#leaderboard td:first-child {
+	text-align: right;
 }
 
-.muted {
+#leaderboard img {
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0;
+	display: inline;
+	vertical-align: bottom;
+}
+
+a.no-underline:hover {
+	border: none;
+}
+
+.muted, #leaderboard td:first-child {
 	color: var(--gb-dm-fg4);
+}
+
+@media (max-width: 400px) {
+	#leaderboard td:first-child {
+		display: none;
+	}
 }
