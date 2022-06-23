@@ -80,7 +80,7 @@
 									{{- range.text -}}
 										{{- if reflect.IsMap . -}}
 											{{- range $kanji, $furigana := . -}}
-												<a href="https://jisho.org/search/{{- $kanji -}} #kanji" target="_blank"><ruby>{{- $kanji -}}<rp>(</rp><rt>{{- $furigana -}}</rt><rp>)</rp></ruby></a>
+												<a href="https://jisho.org/search/{{- $kanji -}} %23kanji" target="_blank"><ruby>{{- $kanji -}}<rp>(</rp><rt>{{- $furigana -}}</rt><rp>)</rp></ruby></a>
 											{{- end -}}
 										{{- else -}}
 											{{- . -}}
