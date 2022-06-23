@@ -84,9 +84,9 @@ However, this is not how we actually write the characters.
 
 Some examples of this are:
 
-- We don't connect き and さ
-- We don't put the dakuten ( ﾞ ) in the middle of a character like in で , but always at the top right
-- We don't write 入 like... that
+- We don't connect <span style="font-family: sans-serif">き</span> and <span style="font-family: sans-serif">さ</span>
+- We don't put the dakuten (<span style="font-family: sans-serif"> ﾞ</span>) in the middle of a character like in <span style="font-family: sans-serif">で</span>, but always at the top right
+- We don't write <span style="font-family: sans-serif">入</span> like... that
 
 You can compare this to how we don't write a Times New Roman "g" when handwriting in English.
 
